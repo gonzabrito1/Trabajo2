@@ -19,15 +19,13 @@ header {
     justify-content: space-between;
     background: rgb(25, 26, 25);
     height: 90px;
-    padding: 0px 70px;
+    padding: 0px 90px;
     border-bottom: 7px solid cornflowerblue;
     
 }
 
 .logo {
-    border-radius: 100px;
-    width: 80px;
-    
+    height: 80px;
 }
 
 .navbar,
@@ -46,7 +44,7 @@ header {
 }
 
 .navbar-list a{
-    color: cornflowerblue;
+    color: rgb(219, 222, 226);
 }
 
 .logo-final {
