@@ -7,20 +7,15 @@
     text-decoration: none;
     list-style: none;
     font-family: "Noto sans", sans-serif;
-}
-
-body{
-    background: gray;
-
-}
-
+    }
+       
 header {
     display: flex;
     justify-content: space-between;
-    background: rgb(25, 26, 25);
+    background: linear-gradient(to bottom, #654ea3, #eaafc8);
     height: 90px;
     padding: 0px 90px;
-    border-bottom: 7px solid cornflowerblue;
+    border-bottom: solid #654ea3 2px;
     
 }
 
@@ -39,16 +34,115 @@ header {
 
 .navbar-list {
     gap: 70px;
-    font-weight: 600;
+    font-weight: 700;
     font-size: 20px;
 }
 
 .navbar-list a{
-    color: rgb(219, 222, 226);
+    color: rgb(15, 15, 15);
 }
 
 .logo-final {
-    display: flex;
-    
+    display: flex; 
     width: 30px;
+}
+
+body{
+    background: #eaafc8;
+}
+
+main {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;   
+}
+/* Seccion titulo e imagen */
+
+#hero {
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 70px 30px;
+    margin-top: 75px;
+}
+
+.hero-totalidad {
+    display: flex;
+    gap: 70px;
+ }
+
+.hero-title {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.hero-title h1{
+    font-size: 32px;
+    font-weight: 900;
+}
+
+.hero-title p{
+    font-weight: 500;
+    font-size: 18px;
+}
+.boton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+}
+.comun {
+    color: white;
+    background: #654ea3;
+    border: none;
+    padding: 15px 20px ;
+    border: solid 1px #654ea3;
+    border-radius: 15px;
+}
+
+.activo{
+    color: #654ea3;
+    background: white;
+    border: none;
+    padding: 15px 20px ;
+    border: solid 1px #654ea3;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.hero-cart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+    gap: 20px;
+    background: #654ea3;
+}
+
+.hero-info-cart {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    }
+
+.hero-relleno{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.hero-info-precio {
+
+}
+.hero-cart img {
+    width: 200px;
+    display: flex;
 }
