@@ -19,8 +19,9 @@ header {
     background: linear-gradient(to bottom, #654ea3, #eaafc8);
     height: 90px;
     padding: 0px 90px;
-    border-bottom: solid #654ea3 2px;
-    
+    /* border-bottom: solid #654ea3 2px; */
+    position: fixed;
+    width: 100%;
 }
 
 .logo {
@@ -40,16 +41,26 @@ header {
 .navbar-list {
     gap: 70px;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 20px;    
+ }
+
+.navbar-list a{
     transition: all .3s ease;
-
+        
+}
+.navbar-list a:hover{
+   color: #ffffff;
+   text-decoration: underline;
+    
 }
 
-.navbar-list:hover{
-    
-    
+.menu-label {
+    display: none;
 }
 
+#menu-hambur {
+    display: none;
+}
 .navbar-list a{
     color: rgb(15, 15, 15);
 }
@@ -80,8 +91,9 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 70px 0px;
-    gap: 50px;
+    padding-top: 190px;
+    padding-bottom: 100px;
+    gap: 70px;
 }
 
 .hero-title {
@@ -90,7 +102,7 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 35px;
+    gap: 50px;
 }
 .hero-title h1{
     font-size: 32px;
@@ -170,10 +182,88 @@ main {
     padding: 30px;
     font-weight: 400;
     font-size: 18px;
-    padding: 90px;
+    padding: 50px;
 }
 
 .descripcion span{
-    font-weight: 700;
+    font-weight: 700;    
+    max-width: ;
+}
+
+/* Mediqri- --------------------------------- */
+
+@media (max-width: 992px) {
     
+    header {
+        padding: 0 20px;   
+    }
+
+    .menu-pic {
+        width: 50px;
+    }
+
+    .navbar {
+        gap: 30px;
+    }
+    /* Menu hambur */
+    .navbar-list {
+        position: absolute;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        top: 90px;
+        right: 5%;
+        left: 15%;
+        background: linear-gradient(to top, #654ea3, #eaafc8);
+        gap: 40px;
+        display: none;
+        width: 70%;
+        padding: 15px;
+        border: 2px solid var(--secundary);
+        border-top: none;
+        border-radius: 0 0 15px 15px;
+    }
+
+    .menu-label {
+        display: flex;
+        order: 2;
+        cursor: pointer;
+    }
+
+    #menu-hambur:checked + .navbar-list{
+        display: flex;
+    }
+
+    #menu-hambur {
+        display: none;
+       /* -------------------- */
+    }
+    .logo {
+        width: 180px;
+    }
+
+    #hero {  
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 100px;
+    }
+
+    .hero-title {
+        gap: 50px;
+    }
+
+    .hero-title h1 {
+        font-size: 30px;
+    }
+
+    .hero-title p {
+        font-size: 20px;
+    }
+    
+    .hero-cart img {
+        width: 100%;
+        
+    }
 }
