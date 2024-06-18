@@ -166,7 +166,8 @@ main {
     display: flex;
     justify-content: center;
     border-radius: 20px;
-    background: #ec85b0;
+    /* background: #a77d8e; */
+    background: linear-gradient(to right, #304352, #d7d2cc);
     padding: 5px;
 }
 
@@ -187,7 +188,7 @@ main {
 
 .descripcion span{
     font-weight: 700;    
-    max-width: ;
+    
 }
 
 /* Mediqri- --------------------------------- */
@@ -222,6 +223,7 @@ main {
         border: 2px solid var(--secundary);
         border-top: none;
         border-radius: 0 0 15px 15px;
+        transition: all 2s ease;
     }
 
     .menu-label {
@@ -266,4 +268,9 @@ main {
         width: 100%;
         
     }
+
+}
+
+@media (max-width: 576px) {
+
 }
