@@ -275,13 +275,11 @@ main {
 }
 
 @media (max-width: 576px) {
-    main {
-        width: 600px;
-    }
+   
     .hero-title h1{
         font-size: 35px;
     }
     .hero-title {
-        width: 80%;
+        
     }
 }   
