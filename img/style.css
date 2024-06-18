@@ -286,9 +286,15 @@ main {
         width: 90%;
     }
     .descripcion {
-        padding: 0;
+        width: 80%;
     }
     .descripcion p{
         font-size: 26px;
+    }
+
+    .activo,
+    .comun {
+        padding: 25px 30px;
+        font-size: 17px;
     }
 }   
