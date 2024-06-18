@@ -276,10 +276,19 @@ main {
 
 @media (max-width: 576px) {
    
-    .hero-title h1{
-       
+    .hero-title p{
+       font-size: 26px;
     }
     .hero-title {
-        
+        width: 70%;
+    }
+    .hero-cart img {
+        width: 90%;
+    }
+    .descripcion {
+        padding: 0;
+    }
+    .descripcion p{
+        font-size: 26px;
     }
 }   
