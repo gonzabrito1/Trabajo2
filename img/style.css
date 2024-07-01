@@ -22,6 +22,7 @@ header {
     /* border-bottom: solid #654ea3 2px; */
     position: fixed;
     width: 100%;
+    z-index: 2;
 }
 
 .logo {
@@ -168,7 +169,9 @@ main {
     border-radius: 20px;
     /* background: #a77d8e; */
     background: linear-gradient(to right, #304352, #d7d2cc);
+    backdrop-filter: blur(20px);
     padding: 5px;
+    box-shadow:  0px 0px 20px 6px rgba(0, 0, 0, 0.54);
 }
 
 .descripcion {
@@ -181,14 +184,217 @@ main {
     text-align: center;
     gap: 20px;
     padding: 30px;
-    font-weight: 400;
+    font-weight: 600;
     font-size: 18px;
-    padding: 50px;
+    padding: 70px;
+    
+    
 }
 
 .descripcion span{
     font-weight: 700;    
     
+}
+
+/* Mid */
+
+#mid {
+    display: flex;
+    max-width: 1200px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 60px;
+    padding: 40px;
+}
+/* titulo */
+.hero-card-titulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.hero-card-titulo h2 {
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.hero-card-titulo p {
+    font-size: 20px;
+    font-weight: 500;
+}
+/* card */
+.hero-card-mid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-cards {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 20px;
+}
+
+.hero-card-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: var(--secundary);
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 20px;
+    gap: 20px;
+    max-width: 300px;
+    box-shadow: 0px 0px 20px 6px rgba(0, 0, 0, 0.54);
+}
+
+.hero-card-1 img {
+    width: 50px;
+}
+
+.hero-card-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: var(--secundary);
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 20px;
+    gap: 20px;
+    max-width: 300px;
+    box-shadow: 0px 0px 20px 6px rgba(0, 0, 0, 0.54);
+}
+
+.hero-card-2 img {
+    width: 50px;
+}
+
+.hero-card-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: var(--secundary);
+    padding: 20px;
+    padding-top: 0px;
+    border-radius: 10px;
+    font-size: 20px;    
+    gap: 20px;
+    max-width: 300px;
+    height: 295px;
+    box-shadow: 0px 0px 20px 6px rgba(0, 0, 0, 0.54);
+}
+
+.hero-card-3 img {
+    width: 50px;
+}
+
+/* contacto */
+
+#contacto {
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    gap: 100px;
+    padding: 70px 40px 40px 40px;
+    background: #eb96b9;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px 6px rgba(0, 0, 0, 0.54);
+
+}
+.hero-info-propietario {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 0 30px 0;
+    /* background: rgb(231, 222, 222);  */
+    max-width: 300px;
+    gap: 20px;
+}
+
+.hero-info-propietario-1,
+.hero-info-propietario-2,
+.hero-info-propietario-3 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.hero-info-propietario-1 img,
+.hero-info-propietario-2 img,
+.hero-info-propietario-3 img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Form */-----------------------------------------
+.hero-info-form {
+    display: flex;
+    flex-direction: column;
+    
+}
+.hero-info-visitantes {
+    /* background: rgb(255, 255, 255); */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 400px;
+    padding: 30px 0 30px 0;
+}   
+
+.hero-info-visitante-1 img,
+.hero-info-visitante-2 img,
+.hero-info-visitante-3 img {
+    width: 30px;
+    height: 30px;
+}
+
+.hero-info-visitante-1,
+.hero-info-visitante-2,
+.hero-info-visitante-3 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    font-weight: 400;
+}
+.contenido-contacto {
+    display: flex;
+    
+    gap: 100px;
+
+}
+
+.boton-form:hover {
+    background: white;
+    color: var(--secundary);
+}
+
+.boton-form {
+    background: var(--secundary);
+    padding: 15px 20px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: 500;
+    border: var(--secundary) 1px solid;
+    transition: all .3s ease;
+    color: white;
+    cursor: pointer;
 }
 
 /* Mediqri- --------------------------------- */
@@ -297,4 +503,4 @@ main {
         padding: 25px 30px;
         font-size: 17px;
     }
-}   
+} 
