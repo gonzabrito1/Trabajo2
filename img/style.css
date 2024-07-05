@@ -205,7 +205,7 @@ main {
     justify-content: center;
     flex-direction: column;
     gap: 60px;
-    padding: 40px;
+    padding: 30px;
 }
 /* titulo */
 .hero-card-titulo {
@@ -302,15 +302,18 @@ main {
 
 #contacto {
     display: flex;
-    /* justify-content: center; */
-    /* align-items: center; */
+    padding: 70px;  
+}
+
+.contenido-contacto {
+    display: flex;
     gap: 100px;
-    padding: 70px 40px 40px 40px;
-    background: #eb96b9;
+    background:  #e990b5;
+    padding: 40px;
     border-radius: 20px;
     box-shadow: 0px 0px 20px 6px rgba(0, 0, 0, 0.54);
-
 }
+
 .hero-info-propietario {
     display: flex;
     flex-direction: column;
@@ -368,12 +371,6 @@ main {
     font-size: 16px;
     font-weight: 400;
 }
-.contenido-contacto {
-    display: flex;
-    
-    gap: 100px;
-
-}
 
 .boton-form:hover {
     background: white;
@@ -396,7 +393,42 @@ main {
     color: white;
     cursor: pointer;
 }
+/* Footer ---------------------------------------------*/
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(to top, #654ea3, #eaafc8);;
+    width: 100%;
+    gap: 10px;
+    padding-top: 25px;
+}
 
+.footer-texto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 600;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.footer-texto a{
+    color: black;
+}
+.footer-redes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.footer-redes img {
+    width: 35px;
+    height: 35px;
+}
 /* Mediqri- --------------------------------- */
 
 @media (max-width: 992px) {
@@ -478,6 +510,12 @@ main {
     body {
         width: 100%;
     }
+
+    .hero-cards {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
 }
 
 @media (max-width: 576px) {
@@ -503,4 +541,29 @@ main {
         padding: 25px 30px;
         font-size: 17px;
     }
-} 
+
+    /* cards */
+    
+    .hero-card-titulo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        width: 80%;;
+    }
+    .hero-cards {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+
+    /* contacto */
+    .contenido-contacto {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
